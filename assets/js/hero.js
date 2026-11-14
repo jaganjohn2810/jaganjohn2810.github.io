@@ -1,9 +1,6 @@
 /* =====================================================================
-   HEROIC LAYER
-   Hero: darkness → lightning strikes the ground → a lime light ignites
-   behind Jagan's head → volumetric god-rays burst → the title slams in
-   line by line → anamorphic flare → UI. Idle: rays follow the cursor.
-   Press and hold anywhere on the hero to power up; release to unleash.
+   JAGAN A. — hero engine (WebGL god-rays, lightning, hold-to-power-up)
+   Runs only on the home page. Starts after the intro loader finishes.
    ===================================================================== */
 (() => {
   const $ = s => document.querySelector(s);
@@ -14,36 +11,6 @@
   const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
   const mouse = {x:0,y:0,sx:0,sy:0};
   addEventListener('pointermove', e=>{ mouse.x=e.clientX/innerWidth*2-1; mouse.y=e.clientY/innerHeight*2-1; });
-
-  /* ---------------- headings: split into letters ---------------- */
-  document.querySelectorAll('.section-heading h2, .manifesto h2, .contact h2').forEach(h=>{
-    let i=0;
-    const walk = n => [...n.childNodes].forEach(c=>{
-      if (c.nodeType===3){ const f=document.createDocumentFragment();
-        c.textContent.split(/(\s+)/).forEach(word=>{ if(!word) return; if(/^\s+$/.test(word)){ f.append(' '); return; }
-          const w=document.createElement('span'); w.className='w';
-          [...word].forEach(ch=>{ const s=document.createElement('span'); s.className='ch'; s.style.setProperty('--i',i++); s.textContent=ch; w.append(s); });
-          f.append(w); });
-        c.replaceWith(f); }
-      else if (c.nodeType===1 && c.tagName!=='BR') walk(c); });
-    walk(h); h.classList.add('slam-h');
-  });
-  // light blade at the top of every section after the hero
-  ['#work','#about','#capabilities','.journey','#contact'].forEach(sel=>{ const s=$(sel); if(!s) return;
-    const b=document.createElement('div'); b.className='blade'; b.setAttribute('aria-hidden','true'); s.prepend(b); });
-  const io = new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return;
-    const t=e.target; t.classList.add('is-in'); if (t.classList.contains('blade')) t.classList.add('go'); io.unobserve(t); }),
-    {rootMargin:'0px 0px -18% 0px'});
-  document.querySelectorAll('.slam-h,.blade,.contact-hero').forEach(el=>io.observe(el));
-
-  /* ---------------- project cards: tilt ---------------- */
-  document.querySelectorAll('.project-visual').forEach(el=>{
-    el.addEventListener('pointermove',e=>{ if(narrow()) return; const r=el.getBoundingClientRect();
-      const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
-      el.style.transform=`rotateY(${x*7}deg) rotateX(${-y*7}deg)`; });
-    el.addEventListener('pointerleave',()=>el.style.transform='');
-  });
-
   /* ---------------- hero ---------------- */
   const sec = $('.hero'), cv = $('#heroGL'), fx = $('#heroFX');
   const lines = [...document.querySelectorAll('.hero-title .title-line')];
@@ -114,7 +81,7 @@
   img.onload = ()=>{ try { gl.bindTexture(gl.TEXTURE_2D,tPerson); gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img); ready=true; }
                      catch(e){ fallback(); } };   // opening index.html straight from disk blocks WebGL images: show the plain version
   img.onerror = fallback;
-  img.src = 'assets/jagan-hero.webp';
+  img.src = 'assets/img/jagan-hero.webp';
 
   /* effects state */
   const embers=Array.from({length:120},()=>({x:Math.random(),y:Math.random(),v:.015+Math.random()*.05,s:Math.random()*1.5+.3,p:Math.random()*7}));
@@ -142,13 +109,13 @@
     mouse.sx=lerp(mouse.sx,mouse.x,.06); mouse.sy=lerp(mouse.sy,mouse.y,.06);
     if (!ready) return;
     const r=sec.getBoundingClientRect(); if (r.bottom<0 || r.top>innerHeight) { last=now; return; }
-    if (t0===null){ t0=now; last=now; }
+    if (t0===null){ if (!window.__introDone) { last=now; return; } t0=now; last=now; }
     const t=tNow=(now-t0)/1000, dt=Math.min(.05,(now-last)/1000); last=now;
     const W=Math.round(cv.clientWidth*DPR), H=Math.round(cv.clientHeight*DPR);
     if (cv.width!==W||cv.height!==H){ cv.width=fx.width=W; cv.height=fx.height=H; }
     const asp=W/H;
     // Jagan stands on the right, where the orb used to float
-    const ph = narrow()? .58 : .85, pw = ph*(img.naturalWidth/img.naturalHeight)/asp;
+    const ph = narrow()? .56 : .86, pw = ph*(img.naturalWidth/img.naturalHeight)/asp;
     const PR=[ narrow()? 1-pw*.92 : 1-pw-.03, 0, pw, ph ];
     const L=[PR[0]+pw*.54+mouse.sx*.04, ph*.89-mouse.sy*.03];    // behind his head (measured from the cutout)
 
@@ -210,18 +177,4 @@
         g2.lineWidth=w*DPR*.6; g2.strokeStyle=c; g2.beginPath(); g2.moveTo(...b.pts[0]); for(const p of b.pts) g2.lineTo(...p); g2.stroke(); } }
   }
   requestAnimationFrame(frame);
-})();
-
-/* journey path: the line fills and each step lights up as you scroll */
-(() => {
-  const path = document.querySelector('.path'), fill = document.getElementById('pathFill');
-  if (!path || !fill) return;
-  const steps = [...path.querySelectorAll('.step')];
-  const tick = () => {
-    const r = path.getBoundingClientRect(), mid = innerHeight*.62;
-    const p = Math.max(0, Math.min(1, (mid - r.top) / r.height));
-    fill.style.height = (p*100)+'%';
-    steps.forEach(s => s.classList.toggle('lit', s.getBoundingClientRect().top < mid));
-  };
-  addEventListener('scroll', tick, {passive:true}); addEventListener('resize', tick); tick();
 })();

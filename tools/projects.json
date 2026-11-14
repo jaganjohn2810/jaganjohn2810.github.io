@@ -1,0 +1,514 @@
+[
+  {
+    "slug": "venthondiyar-heritage-documentary",
+    "num": "01",
+    "title": "Venthondiyar Clan <em>Heritage Documentary</em>",
+    "plain": "Venthondiyar Clan Heritage Documentary",
+    "acc": "#e8a04a",
+    "deep": "#2a1a0c",
+    "art": "<span class=\"grid\"></span><span class=\"sun\"></span>",
+    "category": "AI-assisted documentary",
+    "intro": "An AI-assisted historical heritage documentary that brings a family’s 250+ years of history to the screen.",
+    "meta": [
+      [
+        "Category",
+        "Heritage documentary"
+      ],
+      [
+        "My role",
+        "Direction, AI visual development, edit"
+      ],
+      [
+        "Format",
+        "Documentary film"
+      ],
+      [
+        "Year",
+        "To be confirmed"
+      ]
+    ],
+    "overview": [
+      "The Venthondiyar Clan documentary tells the story of one family across more than two and a half centuries. Very little of that history exists as photographs or film, so the visual world had to be rebuilt.",
+      "Using research as the source of truth and AI image and video generation as the camera, the film reconstructs places, people and moments that could not be filmed, held together by narration and a consistent cinematic look."
+    ],
+    "objective": "Preserve a family’s history in a form future generations will actually watch: a cinematic documentary that feels grounded and respectful rather than synthetic.",
+    "role": [
+      "Research-based visual direction",
+      "Scene-by-scene planning and shot design",
+      "AI image and video generation",
+      "Narration and editing workflow",
+      "Colour, pacing and final edit"
+    ],
+    "approach": [
+      "Every scene started from research, not from a prompt. Historical details decided costume, architecture and setting before any image was generated.",
+      "A fixed visual language (palette, lighting direction, lens feel) was defined up front and reused across every generation so the film reads as one piece instead of a collage of AI clips."
+    ],
+    "highlights": [
+      "Historical storytelling",
+      "Research-based visual direction",
+      "AI image and video generation",
+      "Scene-by-scene planning",
+      "Cinematic visual consistency",
+      "Narration and editing workflow"
+    ],
+    "tools": [
+      "Google Flow (Veo)",
+      "Gemini",
+      "Higgsfield",
+      "Claude",
+      "Premiere Pro",
+      "After Effects",
+      "DaVinci Resolve"
+    ],
+    "process": [
+      [
+        "Research",
+        "Gathering the family history, names, places and periods."
+      ],
+      [
+        "Story structure",
+        "Shaping the history into chapters and a narration script."
+      ],
+      [
+        "Scene planning",
+        "Breaking each chapter into scenes and shots."
+      ],
+      [
+        "Visual development",
+        "Generating key images and locking the visual style."
+      ],
+      [
+        "Image-to-video",
+        "Animating approved frames into cinematic shots."
+      ],
+      [
+        "Edit & narration",
+        "Cutting to the voice-over, adding music, sound and grade."
+      ]
+    ],
+    "media": [
+      [
+        "wide",
+        "Film trailer or full documentary (video)"
+      ],
+      [
+        "",
+        "Key frame — opening scene"
+      ],
+      [
+        "",
+        "Key frame — character / ancestor"
+      ],
+      [
+        "",
+        "Storyboard or scene-planning board"
+      ],
+      [
+        "",
+        "Before / after: research reference vs final frame"
+      ]
+    ],
+    "results": "Results, screenings or audience response will be added here once verified."
+  },
+  {
+    "slug": "brandstep-commercial-campaigns",
+    "num": "02",
+    "title": "Brandstep <em>Commercial Campaigns</em>",
+    "plain": "Brandstep Commercial Campaigns",
+    "acc": "#ff8a3d",
+    "deep": "#2b0f10",
+    "art": "<span class=\"orb\"></span>",
+    "category": "Commercial production",
+    "intro": "Advertisements and product videos created for clients of Brandstep Digital Marketing Agency, from product storytelling to final delivery.",
+    "meta": [
+      [
+        "Category",
+        "Advertising & product video"
+      ],
+      [
+        "My role",
+        "Editing, creative execution, team lead"
+      ],
+      [
+        "Agency",
+        "Brandstep Digital Marketing Agency"
+      ],
+      [
+        "Year",
+        "2024 – Present"
+      ]
+    ],
+    "overview": [
+      "At Brandstep I edit and lead the production of commercial videos for the agency’s clients: product films, ad creatives and social content built to stop the scroll and sell.",
+      "Featured here is work for Zubi Candy, a confectionery brand, including product films for its jelly lolly and teddy jelly lines. More client campaigns will be added as assets are cleared for public use."
+    ],
+    "objective": "Make each product look as appealing as possible in the first seconds, communicate the offer clearly, and deliver ad-ready versions for each platform on deadline.",
+    "role": [
+      "Advertisement editing",
+      "Product storytelling and pacing",
+      "Visual presentation and colour",
+      "Creative execution with the team",
+      "Handling client feedback and revisions"
+    ],
+    "approach": [
+      "Product first: lighting, texture and motion that make the product the hero of every frame.",
+      "Short, clear structure (hook, product, offer, call to action) cut in versions for each placement, then refined through client feedback rounds."
+    ],
+    "highlights": [
+      "Product storytelling",
+      "Advertisement editing",
+      "Visual presentation",
+      "Creative execution",
+      "Client feedback and revisions"
+    ],
+    "tools": [
+      "Premiere Pro",
+      "After Effects",
+      "DaVinci Resolve",
+      "Google Flow (Veo)",
+      "Higgsfield"
+    ],
+    "process": [
+      [
+        "Client brief",
+        "Product, offer, audience and platforms."
+      ],
+      [
+        "Concept",
+        "Hook ideas and the visual direction for the product."
+      ],
+      [
+        "Production",
+        "Footage, product shots and AI-assisted visuals where useful."
+      ],
+      [
+        "Edit",
+        "Pacing, motion, typography and sound."
+      ],
+      [
+        "Review",
+        "Client feedback and revision rounds."
+      ],
+      [
+        "Delivery",
+        "Final exports in every required format."
+      ]
+    ],
+    "media": [
+      [
+        "wide",
+        "Zubi Candy — product film (video)"
+      ],
+      [
+        "tall",
+        "Zubi Candy — vertical reel"
+      ],
+      [
+        "tall",
+        "Additional client campaign (when cleared)"
+      ]
+    ],
+    "results": "Campaign results will be added here only when verified by the client or the agency."
+  },
+  {
+    "slug": "ai-filmmaking-experiments",
+    "num": "03",
+    "title": "AI Filmmaking <em>Experiments</em>",
+    "plain": "AI Filmmaking Experiments",
+    "acc": "#59e6dc",
+    "deep": "#0b1c20",
+    "art": "<span class=\"frame\"></span><span class=\"frame\"></span><span class=\"scan\"></span>",
+    "category": "AI filmmaking R&D",
+    "intro": "Cinematic visuals and short video experiments made with generative AI, exploring how far AI tools can be directed like a real camera crew.",
+    "meta": [
+      [
+        "Category",
+        "Personal R&D"
+      ],
+      [
+        "My role",
+        "Concept, prompting, direction, edit"
+      ],
+      [
+        "Focus",
+        "Image-to-video & consistency"
+      ],
+      [
+        "Year",
+        "Ongoing"
+      ]
+    ],
+    "overview": [
+      "These experiments are where I test new AI tools and techniques before using them on client or documentary work.",
+      "Each piece is treated like a film shoot: a concept, a look, a shot list, then prompting and iteration until the frames feel directed rather than generated."
+    ],
+    "objective": "Build a reliable, repeatable AI filmmaking workflow with consistent characters, intentional camera movement and cinematic light.",
+    "role": [
+      "Concept and shot design",
+      "AI video prompting",
+      "Image-to-video workflows",
+      "Character consistency",
+      "Edit and finishing"
+    ],
+    "approach": [
+      "Start with strong still frames, then animate them. Camera moves, lens and lighting are written into every prompt the way a cinematographer would brief a crew.",
+      "Characters are kept consistent through reference images and a fixed description, so the same person survives from shot to shot."
+    ],
+    "highlights": [
+      "AI video prompting",
+      "Image-to-video workflows",
+      "Character consistency",
+      "Cinematic camera movement",
+      "Lighting and composition"
+    ],
+    "tools": [
+      "Google Flow (Veo)",
+      "Gemini",
+      "Higgsfield",
+      "Claude",
+      "Premiere Pro",
+      "DaVinci Resolve"
+    ],
+    "process": [
+      [
+        "Concept",
+        "A mood, a story beat or a technique to test."
+      ],
+      [
+        "Look development",
+        "Reference frames for palette, light and lens."
+      ],
+      [
+        "Prompting",
+        "Shot-by-shot prompts with camera and lighting direction."
+      ],
+      [
+        "Image-to-video",
+        "Animating approved stills into motion."
+      ],
+      [
+        "Iteration",
+        "Fixing continuity, faces and motion artefacts."
+      ],
+      [
+        "Edit",
+        "Assembling, scoring and grading the final piece."
+      ]
+    ],
+    "media": [
+      [
+        "wide",
+        "AI short film or showreel (video)"
+      ],
+      [
+        "",
+        "Experiment — cinematic portrait"
+      ],
+      [
+        "",
+        "Experiment — camera movement test"
+      ],
+      [
+        "",
+        "Prompt and reference sheet"
+      ],
+      [
+        "",
+        "Experiment — lighting study"
+      ]
+    ],
+    "results": "Experiment notes and outcomes will be added as each piece is published."
+  },
+  {
+    "slug": "faith-and-community",
+    "num": "04",
+    "title": "Faith & <em>Community</em> Creative Projects",
+    "plain": "Faith & Community Creative Projects",
+    "acc": "#ffd36e",
+    "deep": "#1d1406",
+    "art": "<span class=\"star\">✳</span>",
+    "category": "Community storytelling",
+    "intro": "Event branding, posters, promotional videos and storytelling for church and youth communities, including MULTITUDE: The Youth Carol Clash.",
+    "meta": [
+      [
+        "Category",
+        "Event branding & promotion"
+      ],
+      [
+        "My role",
+        "Naming, design, promotion"
+      ],
+      [
+        "Community",
+        "St. Joseph Youth, Selaiyur"
+      ],
+      [
+        "Year",
+        "2026"
+      ]
+    ],
+    "overview": [
+      "Alongside agency work, I create for my faith community, where the goal is participation and togetherness rather than sales.",
+      "The featured project is MULTITUDE: The Youth Carol Clash, a youth carol-singing competition presented by St. Joseph Youth, Selaiyur (Tambaram Vicariate). The name draws on Luke 2:13, the multitude of the heavenly host praising God."
+    ],
+    "objective": "Give the event a memorable identity and promotion that brings youth groups across the vicariate to take part.",
+    "role": [
+      "Event naming and identity",
+      "Poster and promotional design",
+      "Promotional video",
+      "Community storytelling"
+    ],
+    "approach": [
+      "Start from the meaning: a name rooted in scripture that also sounds like a modern event brand.",
+      "Carry one visual identity across posters, social posts and video so every touchpoint feels like the same event."
+    ],
+    "highlights": [
+      "Event branding",
+      "Church event posters",
+      "Promotional videos",
+      "Community storytelling"
+    ],
+    "tools": [
+      "Premiere Pro",
+      "After Effects",
+      "Gemini",
+      "Claude"
+    ],
+    "process": [
+      [
+        "Purpose",
+        "What the event is for and who it should reach."
+      ],
+      [
+        "Naming",
+        "Choosing a name with meaning: MULTITUDE (Luke 2:13)."
+      ],
+      [
+        "Identity",
+        "Logo, colours and type for the event."
+      ],
+      [
+        "Posters",
+        "Announcement and promotional posters."
+      ],
+      [
+        "Video",
+        "Promotional video for social media."
+      ],
+      [
+        "Launch",
+        "Sharing across the youth community."
+      ]
+    ],
+    "media": [
+      [
+        "tall",
+        "MULTITUDE — main event poster"
+      ],
+      [
+        "tall",
+        "MULTITUDE — promotional video"
+      ],
+      [
+        "wide",
+        "Other church event posters and community videos"
+      ]
+    ],
+    "results": "Participation and event outcomes will be added once confirmed."
+  },
+  {
+    "slug": "visual-lab",
+    "num": "05",
+    "title": "Creative Experiments / <em>Visual Lab</em>",
+    "plain": "Creative Experiments / Visual Lab",
+    "acc": "#c7ff55",
+    "deep": "#0d1510",
+    "art": "<span class=\"orb\"></span><span class=\"grid\"></span>",
+    "category": "Personal explorations",
+    "intro": "A space for experimental designs, motion graphics, AI visuals and personal creative explorations, where new ideas get tested before they reach client work.",
+    "meta": [
+      [
+        "Category",
+        "Experiments"
+      ],
+      [
+        "My role",
+        "Everything"
+      ],
+      [
+        "Mediums",
+        "Motion, design, AI visuals"
+      ],
+      [
+        "Year",
+        "Ongoing"
+      ]
+    ],
+    "overview": [
+      "Not every idea starts with a brief. The Visual Lab collects the personal work that keeps my craft sharp: motion tests, typography experiments, AI visuals and design studies.",
+      "This page grows over time as new experiments are added."
+    ],
+    "objective": "Keep learning in public, and build a library of techniques that make client and documentary work better.",
+    "role": [
+      "Concept",
+      "Design and motion",
+      "AI visual generation",
+      "Editing"
+    ],
+    "approach": [
+      "Small, fast experiments, each testing one idea: a transition, a type treatment, a lighting style or a new AI tool.",
+      "The best results become techniques in my production workflow."
+    ],
+    "highlights": [
+      "Experimental design",
+      "Motion graphics",
+      "AI visuals",
+      "Personal creative explorations"
+    ],
+    "tools": [
+      "After Effects",
+      "Premiere Pro",
+      "DaVinci Resolve",
+      "Google Flow (Veo)",
+      "Higgsfield",
+      "Gemini"
+    ],
+    "process": [
+      [
+        "Idea",
+        "One question or technique to explore."
+      ],
+      [
+        "Make",
+        "Build it quickly."
+      ],
+      [
+        "Refine",
+        "Push the best version further."
+      ],
+      [
+        "Share",
+        "Publish it here and on social media."
+      ]
+    ],
+    "media": [
+      [
+        "",
+        "Motion graphics experiment"
+      ],
+      [
+        "",
+        "AI visual study"
+      ],
+      [
+        "",
+        "Typography / design experiment"
+      ],
+      [
+        "",
+        "Transition or effect test"
+      ]
+    ],
+    "results": ""
+  }
+]

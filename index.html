@@ -1,149 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#090b0d" />
-  <meta name="description" content="Jagan A. — Video Editor Head, Project Manager & HR at Brandstep, MBA (HR), AI filmmaker. Creator × Manager, Chennai." />
-  <title>JAGAN A. — Creative Technologist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jagan A. — Creator × Manager | Video Editor Head, Project Manager & AI Filmmaker</title>
+  <meta name="description" content="Jagan A. is a Chennai-based creative professional: Video Editor Head, HR and Project Manager at Brandstep Digital Marketing Agency, and an AI filmmaker. I create the vision. I lead the execution.">
+  <meta name="author" content="Jagan A.">
+  <meta name="theme-color" content="#08090a">
+  <link rel="canonical" href="https://jaganjohn2810.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jagan A. — Creator × Manager">
+  <meta property="og:description" content="I create the vision. I lead the execution. Video editing, AI filmmaking and project leadership.">
+  <meta property="og:url" content="https://jaganjohn2810.github.io/">
+  <meta property="og:image" content="https://jaganjohn2810.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="heroic.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/img/jagan-hero.webp" as="image">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Jagan A.","url":"https://jaganjohn2810.github.io/",
+   "jobTitle":"Video Editor Head | HR | Project Manager","worksFor":{"@type":"Organization","name":"Brandstep Digital Marketing Agency"},
+   "address":{"@type":"PostalAddress","addressLocality":"Chennai","addressCountry":"IN"},
+   "alumniOf":[{"@type":"CollegeOrUniversity","name":"Don Bosco College of Arts and Science, Chennai"},{"@type":"CollegeOrUniversity","name":"Loyola College / Pondicherry University"}],
+   "sameAs":["https://github.com/jaganjohn2810"]}
+  </script>
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <header class="nav">
-    <a class="brand" href="#top" aria-label="Jagan A home"><span class="brand-mark">J<span>.</span></span><span class="brand-name">JAGAN A.</span></a>
-    <nav>
-      <a href="#work">WORK <i>↗</i></a>
-      <a href="#about">ABOUT <i>↗</i></a>
-      <a href="#capabilities">ROLES <i>↗</i></a>
-      <a href="#journey">JOURNEY <i>↗</i></a>
-      <a href="#contact">CONTACT <i>↗</i></a>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="curtain" aria-hidden="true"></div>
+
+  <!-- intro: JA monogram draws itself, then the curtain lifts -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <svg viewBox="0 0 64 64"><path d="M30 54 L43 10 L56 54"/><path d="M8 10 H28 V40 Q28 54 16 54 Q7 54 6 45"/><path d="M35.5 38 H50.5"/></svg>
+      <div class="intro-row"><span class="mono">JAGAN A. — CREATOR × MANAGER</span><span class="intro-count">000</span></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Jagan A. — back to top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M30 54 L43 10 L56 54 M35.5 38 H50.5"/><path class="j" d="M8 10 H28 V40 Q28 54 16 54 Q7 54 6 45"/></svg>
+      <span>JAGAN A.</span>
+    </a>
+    <nav class="site-nav" id="site-menu" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="availability" href="#contact"><span class="pulse"></span> AVAILABLE FOR SELECT PROJECTS</a>
-    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span></button>
+    <a class="btn btn-solid header-cta" href="#contact">Let’s talk <i>↗</i></a>
+    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span></button>
   </header>
 
-  <main id="top">
-    <section class="hero section-pad">
+  <main id="main">
+    <!-- ============================ HOME / HERO ============================ -->
+    <section class="hero wrap" id="top" aria-label="Introduction">
       <canvas id="heroGL" aria-hidden="true"></canvas>
       <canvas id="heroFX" aria-hidden="true"></canvas>
-      <canvas id="particle-field" aria-hidden="true"></canvas>
-      <img class="hero-fallback" src="assets/jagan-hero.webp" alt="Jagan A." />
-      <div class="hero-topline mono"><span>INDEPENDENT CREATIVE PRACTICE</span><span>CHENNAI, INDIA&nbsp; / &nbsp;13°04' N</span></div>
+      <img class="hero-fallback" src="assets/img/jagan-hero.webp" alt="" aria-hidden="true">
+
       <div class="hero-content">
-        <p class="eyebrow reveal"><span class="eyebrow-line"></span> EDITING THE ORDINARY. ENGINEERING THE EXTRAORDINARY.</p>
-        <h1 class="hero-title">
-          <span class="title-line reveal">IDEAS INTO</span>
-          <span class="title-line title-outline reveal">VISUAL <em>IMPACT.</em></span>
+        <p class="hero-kicker mono">Creator × Manager — Chennai, India</p>
+        <h1 class="hero-title" aria-label="Jagan A. — Creator × Manager">
+          <span class="title-line">JAGAN A.</span>
+          <span class="title-line title-sub">CREATOR <b>×</b> MANAGER</span>
         </h1>
-        <div class="hero-bottom reveal">
-          <p class="hero-intro">I’m <strong>Jagan A.</strong>, a creator who manages and a manager who creates. Video Editor Head, Project Manager and HR at Brandstep, MBA (HR), and an AI filmmaker.</p>
-          <a class="round-link" href="#work" aria-label="Explore selected work"><span>EXPLORE<br>MY WORK</span><b>↘</b></a>
+        <p class="hero-quote">“I Create the Vision. <em>I Lead the Execution.</em>”</p>
+        <p class="hero-desc">Transforming ideas into visual experiences through creative storytelling, AI-powered production and strategic project leadership.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#work">View selected work <i>↘</i></a>
+          <a class="btn" href="#contact">Contact me <i>↗</i></a>
         </div>
       </div>
-      <div class="hero-index mono"><span>PORTFOLIO / 2026</span><span>SCROLL TO EXPLORE <b>↓</b></span><span>01 — 05</span></div>
-      <div class="power" aria-hidden="true"><svg viewBox="0 0 40 40"><circle class="bg" cx="20" cy="20" r="18"/><circle class="fg" id="powerFg" cx="20" cy="20" r="18"/></svg><span id="powerTxt">HOLD TO POWER UP</span></div>
-      <div class="hero-orb" aria-hidden="true"><div class="orb-core"></div><div class="orb-ring ring-one"></div><div class="orb-ring ring-two"></div><div class="orb-cross">✳</div></div>
-    </section>
 
-    <section class="ticker" aria-label="Areas of work"><div class="ticker-track">
-      <span>VIDEO EDITING</span><b>✳</b><span>AI FILMMAKING</span><b>✳</b><span>MOTION DESIGN</span><b>✳</b><span>CREATIVE DIRECTION</span><b>✳</b><span>PROJECT MANAGEMENT</span><b>✳</b><span>HR & PEOPLE</span><b>✳</b><span>META ADS</span><b>✳</b>
-      <span>VIDEO EDITING</span><b>✳</b><span>AI FILMMAKING</span><b>✳</b><span>MOTION DESIGN</span><b>✳</b><span>CREATIVE DIRECTION</span><b>✳</b><span>PROJECT MANAGEMENT</span><b>✳</b><span>HR & PEOPLE</span><b>✳</b><span>META ADS</span><b>✳</b>
-    </div></section>
-
-    <section class="work section-pad" id="work">
-      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> 01 / SELECTED WORK</p><h2>WORK THAT<br><span class="muted">MOVES</span> PEOPLE.</h2></div><p class="section-note">Four projects that shaped my career: one I directed, one I crafted, one that sold, and one I built.</p></div>
-      <div class="project-grid pgrid">
-        <!-- EDIT: each card can take a real thumbnail: add  style="--img:url(assets/your-image.jpg)"  on .cv -->
-        <article class="project-card project-wide reveal"><a class="project-visual cv" style="--a:#e8a04a;--b:#2a1a0c" href="#contact"><span class="cv-sun"></span><span class="cv-grid"></span>
-          <span class="visual-label mono">01 / AI FILMMAKING · DIRECTION</span><span class="visual-open">↗</span><div class="cv-type">ROOTS<br><i>OF LEGACY.</i></div></a>
-          <div class="project-meta"><div><h3>Venthondiyar Clan: Heritage Film</h3><p>An AI-assisted documentary I directed and edited, bringing a clan's history to the screen. Proof I can direct, not just cut.</p></div><span class="project-year mono">2026</span></div></article>
-
-        <article class="project-card reveal"><a class="project-visual cv" style="--a:#ff8a3d;--b:#2b0f10" href="#contact"><span class="cv-orb"></span>
-          <span class="visual-label mono">02 / PRODUCT FILMS · EDIT</span><span class="visual-open">↗</span><div class="cv-type">SWEET<br>IN SLOW<br><i>MOTION.</i></div></a>
-          <div class="project-meta"><div><h3>Zubi Candy</h3><p>Cinematic product films for Button Jelly Lolly and Teddy Jelly. Craft, colour and pace that make a sweet look premium.</p></div><span class="project-year mono">2026</span></div></article>
-
-        <article class="project-card reveal"><a class="project-visual cv" style="--a:#c7ff55;--b:#0f1a10" href="#contact"><span class="cv-bars"><i></i><i></i><i></i><i></i><i></i></span>
-          <span class="visual-label mono">03 / META ADS · STRATEGY</span><span class="visual-open">↗</span><div class="cv-type">ADS THAT<br><i>BRING<br>LEADS.</i></div></a>
-          <div class="project-meta"><div><h3>Lead Campaigns: Craft Interior · Satiz Photography</h3><p>Meta lead campaigns and landing pages for interior and wedding brands. Creative that turns into enquiries.</p></div><span class="project-year mono">2026</span></div></article>
-
-        <article class="project-card project-wide reveal"><a class="project-visual cv" style="--a:#c7ff55;--b:#0b1416" href="#contact"><span class="cv-orb"></span><span class="cv-grid"></span>
-          <span class="visual-label mono">04 / PRODUCT · BUILT & LED BY ME</span><span class="visual-open">↗</span><div class="cv-type">ONE PLATFORM.<br><i>EVERY LEAD.</i></div></a>
-          <div class="project-meta"><div><h3>BRANDSTEP AI</h3><p>An AI-first marketing and sales platform I planned and am shipping phase by phase. Where the creator and the manager meet.</p></div><span class="project-year mono">2026</span></div></article>
-      </div>
-    </section>
-
-    <section class="manifesto section-pad" id="about">
-      <img class="about-portrait" src="assets/jagan-profile.webp" alt="Jagan A. portrait" loading="lazy" />
-      <p class="eyebrow reveal"><span class="eyebrow-line"></span> 02 / THE PERSON BEHIND THE PIXELS</p>
-      <div class="manifesto-layout">
-        <h2 class="reveal">NOT JUST<br>A <span class="accent">CREATOR.</span><br>A <span class="outline-word">MANAGER.</span></h2>
-        <div class="manifesto-copy reveal"><p class="big-copy">I make the work, and I make the work happen. One day I'm cutting a product film, the next I'm running the team that delivers ten of them.</p><p>I started with words: a degree in English taught me how a story is built. Then I picked up the edit timeline, then the team, then the whole operation. Today I lead editing, people and projects at Brandstep, with an MBA in HR to back the people side.</p><a class="text-link" href="#journey">SEE HOW I GOT HERE <span>↓</span></a></div>
-      </div>
-      <div class="stats-row reveal">
-        <div><strong data-count="15">15<span>+</span></strong><small>BRANDS SERVED</small></div>
-        <div><strong data-count="3">3</strong><small>ROLES · EDITOR HEAD · PM · HR</small></div>
-        <div><strong>MBA</strong><small>HUMAN RESOURCES · COMPLETED</small></div>
-        <div><strong>∞</strong><small>WAYS TO TELL A STORY</small></div>
-      </div>
-    </section>
-
-    <section class="capabilities section-pad roles" id="capabilities">
-      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> 03 / TWO SIDES, ONE PERSON</p><h2>CREATOR<br><span class="muted">×</span> MANAGER.</h2></div><p class="section-note">Most people pick one side. I work on both, and that's why my projects ship on time and still look good.</p></div>
-      <div class="roles-grid">
-        <div class="role-col reveal">
-          <p class="role-tag mono"><b>◆</b> THE CREATOR</p>
-          <div class="cap-item"><span class="cap-num mono">01</span><div><h3>Video Editing & Post</h3><p>Reels, ads, brand films and event AVs. Pacing, sound and colour. Premiere Pro · After Effects · DaVinci Resolve.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">02</span><div><h3>AI Filmmaking</h3><p>Concept to frame to film with Google Flow (Veo), Gemini, Higgsfield and Claude. Heritage stories and product worlds.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">03</span><div><h3>Scripts & Storytelling</h3><p>Tamil and English ad scripts with emotion beats, hooks and calls to action that sell.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">04</span><div><h3>Ads & Creative Strategy</h3><p>Meta lead campaigns, landing pages and festive launches for interior, wedding and FMCG brands.</p></div></div>
-        </div>
-        <div class="role-col reveal">
-          <p class="role-tag mono"><b>◆</b> THE MANAGER</p>
-          <div class="cap-item"><span class="cap-num mono">01</span><div><h3>Video Editor Head</h3><p>I lead the editing team. I set the workflow, review every cut and keep the quality bar high.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">02</span><div><h3>Project Manager</h3><p>Client communication, timelines and delivery. I built the CRM, operations dashboards and sprint trackers the agency runs on.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">03</span><div><h3>Human Resources</h3><p>Hiring, onboarding, attendance and people operations, backed by an MBA in HR.</p></div></div>
-          <div class="cap-item"><span class="cap-num mono">04</span><div><h3>Sales Pipeline</h3><p>I lead the sales team with daily activity tracking and weekly pipeline reviews from lead to closed deal.</p></div></div>
+      <div class="hero-meta">
+        <a class="featured" href="work/venthondiyar-heritage-documentary.html" data-cursor="View">
+          <span class="featured-thumb" aria-hidden="true"></span>
+          <span><span class="mono">Featured project — 01</span><b>Venthondiyar Clan Heritage Documentary</b></span>
+        </a>
+        <div class="power" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle class="bg" cx="20" cy="20" r="18"/><circle class="fg" id="powerFg" cx="20" cy="20" r="18"/></svg>
+          <span class="mono" id="powerTxt">HOLD TO POWER UP</span>
         </div>
       </div>
     </section>
 
-    <section class="journey section-pad" id="journey">
-      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> 04 / THE JOURNEY</p><h2>FROM FIRST CUT<br><span class="muted">TO</span> FRONT SEAT.</h2></div><p class="section-note">Where I started, how I grew and where I stand now.</p></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track">
+      <span>Video Editing</span><b>✳</b><span>AI Filmmaking</span><b>✳</b><span>Motion Graphics</span><b>✳</b><span>Creative Direction</span><b>✳</b><span>Project Management</span><b>✳</b><span>Team Leadership</span><b>✳</b><span>HR Operations</span><b>✳</b>
+      <span>Video Editing</span><b>✳</b><span>AI Filmmaking</span><b>✳</b><span>Motion Graphics</span><b>✳</b><span>Creative Direction</span><b>✳</b><span>Project Management</span><b>✳</b><span>Team Leadership</span><b>✳</b><span>HR Operations</span><b>✳</b>
+    </div></div>
+
+    <!-- ============================ SELECTED WORKS ============================ -->
+    <section class="section works" id="work" aria-labelledby="work-title">
+      <div class="blade" aria-hidden="true"></div>
+      <div class="section-head wrap">
+        <div><p class="eyebrow mono">01 / Selected works</p>
+          <h2 class="h2 slam" id="work-title">Work that<br><span class="muted">moves</span> people.</h2></div>
+        <p class="lead reveal">Five bodies of work across documentary, commercial production, AI filmmaking and community storytelling. Open any project for the full case study.</p>
+      </div>
+      <div class="works-pin">
+        <div class="works-track">
+          <!-- EDIT: to show a real cover, add  style="--img:url(assets/img/your-image.jpg)"  to the .art element -->
+          <article class="work-card">
+            <a class="work-visual" href="work/venthondiyar-heritage-documentary.html" data-tilt data-cursor="Open" aria-label="Open case study: Venthondiyar Clan Heritage Documentary">
+              <div class="work-art art" style="--acc:#e8a04a;--deep:#2a1a0c"><span class="grid"></span><span class="sun"></span></div>
+              <span class="tag mono">AI documentary · Direction & edit</span><span class="open">↗</span>
+              <span class="big" style="--acc:#e8a04a">Roots<br><i>of legacy.</i></span><span class="ph">Cover image to be added</span>
+            </a>
+            <div class="work-info"><div><h3>Venthondiyar Clan Heritage Documentary</h3><p>An AI-assisted historical documentary based on a family’s 250+ years of history.</p></div><span class="work-num">01</span></div>
+          </article>
+          <article class="work-card">
+            <a class="work-visual" href="work/brandstep-commercial-campaigns.html" data-tilt data-cursor="Open" aria-label="Open case study: Brandstep Commercial Campaigns">
+              <div class="work-art art" style="--acc:#ff8a3d;--deep:#2b0f10"><span class="orb"></span></div>
+              <span class="tag mono">Commercial · Product films</span><span class="open">↗</span>
+              <span class="big" style="--acc:#ff8a3d">Made<br>to <i>sell.</i></span><span class="ph">Cover image to be added</span>
+            </a>
+            <div class="work-info"><div><h3>Brandstep Commercial Campaigns</h3><p>Advertisements and product videos for agency clients, including Zubi Candy.</p></div><span class="work-num">02</span></div>
+          </article>
+          <article class="work-card">
+            <a class="work-visual" href="work/ai-filmmaking-experiments.html" data-tilt data-cursor="Open" aria-label="Open case study: AI Filmmaking Experiments">
+              <div class="work-art art" style="--acc:#59e6dc;--deep:#0b1c20"><span class="frame"></span><span class="frame"></span><span class="scan"></span></div>
+              <span class="tag mono">AI filmmaking · Experiments</span><span class="open">↗</span>
+              <span class="big" style="--acc:#59e6dc">Frames<br>from <i>prompts.</i></span><span class="ph">Cover image to be added</span>
+            </a>
+            <div class="work-info"><div><h3>AI Filmmaking Experiments</h3><p>Cinematic visuals and video experiments built with generative AI.</p></div><span class="work-num">03</span></div>
+          </article>
+          <article class="work-card">
+            <a class="work-visual" href="work/faith-and-community.html" data-tilt data-cursor="Open" aria-label="Open case study: Faith and Community Creative Projects">
+              <div class="work-art art" style="--acc:#ffd36e;--deep:#1d1406"><span class="star">✳</span></div>
+              <span class="tag mono">Faith & community · Event branding</span><span class="open">↗</span>
+              <span class="big" style="--acc:#ffd36e">Stories<br>of <i>faith.</i></span><span class="ph">Cover image to be added</span>
+            </a>
+            <div class="work-info"><div><h3>Faith & Community Creative Projects</h3><p>Event branding, posters and promotional videos for church and youth communities.</p></div><span class="work-num">04</span></div>
+          </article>
+          <article class="work-card">
+            <a class="work-visual" href="work/visual-lab.html" data-tilt data-cursor="Open" aria-label="Open case study: Creative Experiments / Visual Lab">
+              <div class="work-art art" style="--acc:#c7ff55;--deep:#0d1510"><span class="orb"></span><span class="grid"></span></div>
+              <span class="tag mono">Experiments · Motion · AI visuals</span><span class="open">↗</span>
+              <span class="big">Visual<br><i>lab.</i></span><span class="ph">Cover image to be added</span>
+            </a>
+            <div class="work-info"><div><h3>Creative Experiments / Visual Lab</h3><p>Experimental design, motion graphics and personal creative explorations.</p></div><span class="work-num">05</span></div>
+          </article>
+          <div class="works-end">
+            <p class="mono">End of reel</p>
+            <h3>Have a story<br>worth <span class="acid">telling?</span></h3>
+            <a class="btn btn-solid" href="#contact">Start a conversation <i>↗</i></a>
+          </div>
+        </div>
+        <div class="works-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="blade" aria-hidden="true"></div>
+      <div class="about-grid">
+        <figure class="portrait reveal" style="margin:0">
+          <img src="assets/img/jagan-profile.webp" alt="Portrait of Jagan A." loading="lazy" width="760" height="1300">
+          <span class="mono">Jagan A. — Chennai</span>
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow mono">02 / About me</p>
+          <h2 class="h2 slam" id="about-title" style="margin-bottom:34px">Not just<br>a video <span class="outline">editor.</span></h2>
+          <p class="big reveal">I conceptualise ideas, produce them and lead the people who deliver them. <em>Creative work that ships on time and lands with its audience.</em></p>
+          <p class="reveal">My foundation is storytelling. I studied English, which taught me how a story is structured before I ever shaped one on a timeline. In 2024 I joined Brandstep Digital Marketing Agency as a fresher video editor. Since then my work has grown from editing my own cuts to leading the editing team, handling HR and managing projects from brief to delivery.</p>
+          <p class="reveal">Alongside that, I work with AI filmmaking and generative tools to build visuals that would otherwise need a full production crew, while keeping the craft, the continuity and the story in human hands.</p>
+          <div class="pillars stagger">
+            <div><span class="mono acid">01</span><b>Creator</b><p>Visual storytelling, video editing, motion design, advertising and creative direction.</p></div>
+            <div><span class="mono cyan">02</span><b>Leader</b><p>Team management, HR operations, project coordination, workflows and client communication.</p></div>
+            <div><span class="mono acid">03</span><b>Innovator</b><p>AI filmmaking, generative AI, creative technology and modern production workflows.</p></div>
+          </div>
+        </div>
+      </div>
+      <p class="manifesto reveal">I am a creator who understands <em>execution</em>, <span>a manager who understands</span> creativity, <span>and an innovator who uses technology to turn ideas into</span> experiences.</p>
+    </section>
+
+    <!-- ============================ CAPABILITIES ============================ -->
+    <section class="section wrap" id="capabilities" aria-labelledby="cap-title">
+      <div class="blade" aria-hidden="true"></div>
+      <div class="section-head">
+        <div><p class="eyebrow mono">03 / Creative capabilities</p>
+          <h2 class="h2 slam" id="cap-title">Three <span class="muted">skill</span><br>sets. One person.</h2></div>
+        <p class="lead reveal">Production craft, emerging technology and the management discipline that holds them together.</p>
+      </div>
+      <div class="caps stagger">
+        <div class="cap"><span class="cap-n">A — Creative production</span><h3>Create</h3>
+          <ul><li>Video Editing</li><li>Motion Graphics</li><li>Visual Storytelling</li><li>Advertisement Production</li><li>Creative Direction</li><li>Content Creation</li></ul></div>
+        <div class="cap"><span class="cap-n">B — AI & emerging technology</span><h3>Innovate</h3>
+          <ul><li>AI Filmmaking</li><li>AI Image Generation</li><li>AI Video Generation</li><li>Creative Prompt Engineering</li><li>AI-Assisted Production Workflows</li></ul></div>
+        <div class="cap"><span class="cap-n">C — Leadership & management</span><h3>Lead</h3>
+          <ul><li>Project Management</li><li>Team Leadership</li><li>HR Operations</li><li>Workflow Development</li><li>Client Communication</li><li>Resource Coordination</li><li>Quality Control</li></ul></div>
+      </div>
+      <p class="mono reveal" style="margin-top:34px">Tools — Premiere Pro · After Effects · DaVinci Resolve · Google Flow · Gemini · Higgsfield · Claude</p>
+    </section>
+
+    <!-- ============================ LEADERSHIP & EXPERIENCE ============================ -->
+    <section class="section wrap" id="leadership" aria-labelledby="lead-title">
+      <div class="blade" aria-hidden="true"></div>
+      <div class="section-head">
+        <div><p class="eyebrow mono">04 / Leadership & experience</p>
+          <h2 class="h2 slam" id="lead-title">More than<br><span class="muted">the</span> timeline.</h2></div>
+        <p class="lead reveal">At Brandstep I manage the work around the work: people, process, clients and deadlines.</p>
+      </div>
+      <div class="lead-grid">
+        <aside class="flow reveal" aria-label="How I run a project">
+          <p class="mono acid">How I run a project</p>
+          <ol>
+            <li><b>Brief</b><span>Understand the client, the goal and the audience.</span></li>
+            <li><b>Plan</b><span>Break the work into tasks, owners and dates.</span></li>
+            <li><b>Assign</b><span>Match each task to the right person on the team.</span></li>
+            <li><b>Produce</b><span>Edit, design and generate, with check-ins along the way.</span></li>
+            <li><b>Review</b><span>Quality control and client revisions.</span></li>
+            <li><b>Deliver</b><span>On time, in the right formats, ready to publish.</span></li>
+          </ol>
+        </aside>
+        <ul class="duties stagger">
+          <li><span class="n">01</span><div><h3>Assigning tasks to team members</h3><p>Distributing editing and creative work according to each person’s strengths and current load.</p></div></li>
+          <li><span class="n">02</span><div><h3>Managing editing & creative workflows</h3><p>Setting how work moves from raw footage to final export, and keeping standards consistent across editors.</p></div></li>
+          <li><span class="n">03</span><div><h3>Coordinating with clients</h3><p>Taking briefs, sharing drafts, collecting feedback and managing revisions.</p></div></li>
+          <li><span class="n">04</span><div><h3>Monitoring project progress</h3><p>Tracking every project’s status so problems surface early.</p></div></li>
+          <li><span class="n">05</span><div><h3>Maintaining delivery timelines</h3><p>Planning around deadlines and keeping the team on schedule.</p></div></li>
+          <li><span class="n">06</span><div><h3>Handling HR & administration</h3><p>Supporting people operations and day-to-day administrative responsibilities.</p></div></li>
+          <li><span class="n">07</span><div><h3>Improving internal processes</h3><p>Building trackers, checklists and systems that make the team faster and clearer.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ JOURNEY ============================ -->
+    <section class="section wrap" id="journey" aria-labelledby="journey-title">
+      <div class="blade" aria-hidden="true"></div>
+      <div class="section-head">
+        <div><p class="eyebrow mono">05 / My journey</p>
+          <h2 class="h2 slam" id="journey-title">From first cut<br><span class="muted">to</span> front seat.</h2></div>
+        <p class="lead reveal">From a fresher video editor to a professional handling creative leadership, HR and project management.</p>
+      </div>
       <div class="path">
-        <div class="path-line"><i id="pathFill"></i></div>
-        <!-- EDIT: change the year labels if any date is different -->
-        <div class="step reveal"><span class="step-dot"></span><span class="step-when mono">2023 · THE START</span><h3>The storyteller</h3><p class="step-role mono">B.A. ENGLISH · GRADUATE</p><p>Before frames, there were words. Studying English taught me structure, voice and what makes people feel something.</p></div>
-        <div class="step reveal"><span class="step-dot"></span><span class="step-when mono">2024 · FIRST CUT</span><h3>Video editor at Brandstep</h3><p class="step-role mono">BRANDSTEP DIGITAL MARKETING AGENCY</p><p>Joined the agency on the timeline: reels, ads and brand films for real clients on real deadlines.</p></div>
-        <div class="step reveal"><span class="step-dot"></span><span class="step-when mono">LEVEL UP</span><h3>Leading the edit</h3><p class="step-role mono">VIDEO EDITOR HEAD</p><p>Moved from editing my own cuts to running the edit team: workflows, reviews and the standard every video has to meet.</p></div>
-        <div class="step reveal"><span class="step-dot"></span><span class="step-when mono">PEOPLE</span><h3>People & process</h3><p class="step-role mono">HR · TEAM COORDINATION</p><p>Took on HR: hiring, onboarding, attendance and keeping a growing creative team in rhythm.</p></div>
-        <div class="step reveal"><span class="step-dot"></span><span class="step-when mono">OPERATIONS</span><h3>Running the show</h3><p class="step-role mono">PROJECT MANAGER</p><p>Owning client communication, delivery timelines and the sales pipeline, and building the CRM and dashboards behind it all.</p></div>
-        <div class="step step-now reveal"><span class="step-dot"></span><span class="step-when mono">2026 · NOW</span><h3>Creator × Manager</h3><p class="step-role mono">MBA (HR) COMPLETED · BUILDING BRANDSTEP AI</p><p>Directing AI films, leading editing, HR and projects, and building an AI marketing platform of my own. This is where I stand, and I'm still climbing.</p></div>
+        <div class="path-line" aria-hidden="true"><div class="path-fill"></div></div>
+        <div class="step reveal"><p class="when mono">2023 · Foundation</p><h3>The storyteller</h3>
+          <p class="where mono">B.A. English — Don Bosco College of Arts and Science, Chennai</p>
+          <p class="d">Studying literature taught me structure, voice and what makes an audience feel something. It became the base of everything I edit.</p></div>
+        <div class="step reveal"><p class="when mono">2024 · The first cut</p><h3>Video editor</h3>
+          <p class="where mono">Brandstep Digital Marketing Agency / BrandstepCorp</p>
+          <p class="d">Joined the agency as a fresher on the edit timeline: ads, reels and brand videos for real clients on real deadlines.</p></div>
+        <div class="step reveal"><p class="when mono">Growing the role</p><h3>Leading the edit</h3>
+          <p class="where mono">Video Editor Head</p>
+          <p class="d">Moved from my own cuts to the whole team’s: workflows, task assignment, reviews and the quality bar every video has to meet.</p></div>
+        <div class="step reveal"><p class="when mono">Beyond creative</p><h3>People & projects</h3>
+          <p class="where mono">HR · Project Manager</p>
+          <p class="d">Took on HR and project management: coordinating clients, tracking progress, protecting timelines and improving internal processes.</p></div>
+        <div class="step reveal"><p class="when mono">Education</p><h3>MBA, HR Management</h3>
+          <p class="where mono">Loyola College / Pondicherry University — completed</p>
+          <p class="d">Formal grounding in human resource management to support the people side of my work.</p></div>
+        <div class="step now reveal"><p class="when mono">2024 – Present · Now</p><h3>Creator × Manager</h3>
+          <p class="where mono">Brandstep Digital Marketing Agency</p>
+          <div class="roles"><span>Video Editor Head</span><span>HR</span><span>Project Manager</span></div></div>
       </div>
     </section>
 
-    <section class="contact section-pad" id="contact">
-      <div class="contact-orbit" aria-hidden="true"></div>
-      <img class="contact-hero" src="assets/jagan-portrait.webp" alt="" aria-hidden="true" />
-      <p class="eyebrow reveal"><span class="eyebrow-line"></span> 05 / HAVE A GOOD IDEA?</p>
-      <h2 class="reveal">LET’S MAKE<br><span>SOMETHING</span><br>MATTER.</h2>
-      <div class="contact-bottom reveal"><p>A film, a campaign, or a team that needs leading? Message me on WhatsApp. I usually reply the same day.</p>
-        <div class="contact-actions">
-          <a class="wa-button" href="https://wa.me/917092873429?text=Hi%20Jagan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20talk%20about%20a%20project." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2s.2-1.1.1-1.2z"/></svg> WHATSAPP · +91 70928 73429</a>
-          <a class="contact-button" href="mailto:hello@jagana.in">EMAIL ME <span>↗</span></a>
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="blade" aria-hidden="true"></div>
+      <img class="contact-photo" src="assets/img/jagan-portrait.webp" alt="" aria-hidden="true" loading="lazy">
+      <p class="eyebrow mono">06 / Contact</p>
+      <h2 class="contact-title slam" id="contact-title">Let’s make<br><span class="acid">it real.</span></h2>
+      <div class="contact-body">
+        <p class="reveal">Have a film, a campaign or a project that needs both creative direction and someone to run it? Message me. I usually reply the same day.</p>
+        <div class="channels reveal">
+          <!-- Links come from assets/js/config.js. Empty ones are removed automatically. -->
+          <a data-contact="whatsapp" href="https://wa.me/917092873429"><span class="k">WhatsApp</span><span class="v wa" data-contact-value>+91 70928 73429</span></a>
+          <a data-contact="email" href="#contact" hidden><span class="k">Email</span><span class="v" data-contact-value></span></a>
+          <a data-contact="linkedin" href="#contact" hidden><span class="k">LinkedIn</span><span class="v" data-contact-value></span></a>
+          <a data-contact="instagram" href="#contact" hidden><span class="k">Instagram</span><span class="v" data-contact-value></span></a>
+          <a data-contact="github" href="https://github.com/jaganjohn2810"><span class="k">GitHub</span><span class="v" data-contact-value>github.com/jaganjohn2810</span></a>
         </div>
       </div>
-      <footer><a class="brand" href="#top"><span class="brand-mark">J<span>.</span></span><span class="brand-name">JAGAN A.</span></a><span class="mono">CREATOR × MANAGER · CHENNAI · © 2026</span><a class="back-top mono" href="#top">BACK TO TOP ↑</a></footer>
+      <footer class="site-footer">
+        <span class="mono">© <span data-year>2026</span> Jagan A. — Creator × Manager</span>
+        <span class="mono">Chennai, India</span>
+        <a class="mono" href="#top">Back to top ↑</a>
+      </footer>
     </section>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
-  <script src="heroic.js"></script>
+
+  <script src="assets/js/config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/hero.js" defer></script>
 </body>
 </html>
