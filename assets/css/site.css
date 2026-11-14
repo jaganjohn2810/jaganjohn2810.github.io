@@ -219,7 +219,7 @@ html:not(.js) .curtain,html:not(.js) .intro{display:none}
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,7vw,120px);align-items:center}
 .portrait{position:relative;aspect-ratio:4/5;overflow:hidden;background:radial-gradient(70% 60% at 50% 35%,rgba(89,230,220,.16),transparent 70%),linear-gradient(180deg,#0f1416,#08090a);border:1px solid var(--line)}
-.portrait img{position:absolute;left:50%;bottom:0;height:96%;width:auto;max-width:none;transform:translateX(-50%)}
+.portrait img{position:absolute;left:50%;bottom:0;width:108%;height:auto;max-width:none;transform:translateX(-50%)}
 .portrait .mono{position:absolute;left:18px;top:16px}
 .portrait:after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(transparent,#08090a)}
 .about-copy .big{font:600 clamp(24px,2.6vw,40px)/1.18 var(--display);letter-spacing:-.035em}
@@ -353,5 +353,5 @@ html:not(.js) .curtain,html:not(.js) .intro{display:none}
 .menu-open .site-header{backdrop-filter:none;-webkit-backdrop-filter:none;background:transparent;border-color:transparent}
 /* phones: a dark scrim keeps the hero copy readable over the light rays */
 @media (max-width:800px){
-  .hero:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 22%,rgba(8,9,10,.55) 42%,rgba(8,9,10,.92) 70%)}
+  .hero:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 36%,rgba(8,9,10,.6) 52%,rgba(8,9,10,.94) 72%)}
 }

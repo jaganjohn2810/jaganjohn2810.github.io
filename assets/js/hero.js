@@ -115,9 +115,10 @@
     if (cv.width!==W||cv.height!==H){ cv.width=fx.width=W; cv.height=fx.height=H; }
     const asp=W/H;
     // Jagan stands on the right, where the orb used to float
-    const ph = narrow()? .56 : .86, pw = ph*(img.naturalWidth/img.naturalHeight)/asp;
-    const PR=[ narrow()? 1-pw*.92 : 1-pw-.03, 0, pw, ph ];
-    const L=[PR[0]+pw*.54+mouse.sx*.04, ph*.89-mouse.sy*.03];    // behind his head (measured from the cutout)
+    const ph = narrow()? .42 : .8, pw = ph*(img.naturalWidth/img.naturalHeight)/asp;
+    const PR = narrow() ? [ .5-pw/2, .47, pw, ph ]      // phones: portrait in the top half, copy below
+                       : [ 1-pw-.03, 0, pw, ph ];
+    const L=[PR[0]+pw*.50+mouse.sx*.04, PR[1]+ph*.84-mouse.sy*.03];    // behind his head (measured from the cutout)
 
     // choreography
     if (t>.35 && !struck){ struck=true; strike(2,L[0]*W,W,H); }
